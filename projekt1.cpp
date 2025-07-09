@@ -2,6 +2,26 @@
 
 using namespace std;
 
+void liczbaPierwsza(int liczba)
+{
+   int licznik=0;
+   for(int i=1;i<=liczba;i++)
+	{
+	  if(liczba % i == 0 )
+		{
+		    licznik++;
+		}	
+	}
+	if(licznik <= 2) 
+	{
+	cout<<"Liczba Pierwsza" << endl;	
+	}
+	else 
+	{
+	 cout<<"Liczba zlozona" << endl;
+	}
+}
+
 int main() {
     int a, b;
     cout << "Podaj liczbe calkowita ";
